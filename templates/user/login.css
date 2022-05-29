@@ -1,0 +1,106 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background:linear-gradient(to right top,#65dfc9,#6cdbeb);
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+#form{
+  background:linear-gradient(to right bottom,
+            rgba(255,255,255,0.7),
+            rgba(255,255,255,0.3));
+    width: 300px;
+    height: 400px;
+    border-radius:10px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+h2{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.303);
+    width: 250px;
+    text-align: center;
+    padding: 0px 0px 15px 0px;
+    margin-bottom: -50px;
+}
+.inputs{
+  position: relative;
+}
+input{
+    background: transparent;
+    border-radius: 5px;
+    border:none;
+    border-bottom:2px solid black ;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+.input-label{
+  position: absolute;
+  cursor: text;
+  pointer-events: none;
+  left: 1.4rem;
+  top: 1rem;
+  transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
+}
+.input:focus ~ .input-label,
+.input:not(:placeholder-shown).input:not(:focus)~.input-label
+{
+  top: -0.3rem;
+  left: 0.5rem;
+  font-size: 10px;
+
+}
+button{
+    cursor: pointer;
+    background: transparent;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 6px 0px 0px 0px;
+    background:linear-gradient(to right top,#65dfc8,#6cdbeb);
+    color: white;
+    border: none;
+}
+.circle1,.circle2{
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(to right bottom,
+            rgba(255,255,255,0.9),
+            rgba(255,255,255,0.1));
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.circle1{
+  top: -3%;
+  left: -2%;
+}
+.circle2{
+  bottom: 10%;
+  left: 50%;
+}
+.rememberme{
+  margin-bottom: 10px;
+  color: #607d8b;
+  font-weight: 400;
+  font-size: 14px;
+}
+.inputbox{
+  color: #607d8b;
+}

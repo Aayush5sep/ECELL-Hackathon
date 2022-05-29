@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <form action="/" method="post" id="Form1">
+        <h3>CREATE ACCOUNT</h3>
+        <div class="input-box">
+          <div class="inputs">
+          <input class="input" type="Email" name="email" placeholder=" "required>
+          <label class="input-label" for="email">Email</label>
+          </div>
+          <div class="inputs">
+          <input class="input" type="text" name="username" placeholder=" "required>
+          <label class="input-label" for="email">Username</label>
+          </div>
+          <div class="inputs">
+          <input class="input" type="password" name="password" placeholder=" "required>
+          <label class="input-label" for="email">Password</label>
+          </div>
+          <div class="btn-box">
+            <button type="button" id="next1">Next</button></div>
+              </div>
+      </form>
+      <form action="/" method="post" id="Form2">
+        <h3>PERSONAL INFO</h3>
+        <div class="input-box">
+          <div class="inputs">
+          <input class="input" type="text" name="fname" placeholder=" "required>
+          <label class="input-label" for="text">First Name</label>
+          </div>
+          <div class="inputs">
+          <input class="input" type="text" name="lname" placeholder=" "required>
+          <label class="input-label" for="email">Last Name</label>
+          </div>
+          <div class="inputs">
+          <input class="input" type="tel" name="phone" placeholder=" "required>
+          <label class="input-label" for="email">Phone No.</label>
+          </div>
+          <div class="btn-box">
+            <button type="button" id="back1">Back</button>
+            <button type="button" id="next2">Next</button></div>
+          </div>
+      </form>
+      <form action="/" method="post" id="Form3">
+        <h3 id="add">Address</h3>
+        <div class="input-box location">
+          <h3>Country</h3>
+                <select name="country" class="countries form-control" id="countryId">
+                  <option value="">Select Country</option>
+            </select>
+                <h3>State</h3>
+                <select name="state" class="states form-control" id="stateId">
+                    <option value="">Select State</option>
+                  </select>
+                  <h3>City</h3>
+                        <select name="city" class="cities form-control" id="cityId">
+                            <option value="">Select City</option>
+                        </select>
+          <div class="btn-box">
+            <button type="button" id="back2">Back</button>
+            <button type="submit">Submit</button></div>
+              </div>
+      </form>
+      <div class="step-row">
+      <div id="progress"></div>
+    <div class="step-col"><small>Step1</small></div>
+    <div class="step-col"><small>Step2</small></div>
+    <div class="step-col"><small>Step3</small></div>
+    </div>
+    </div>
+  </body>
+</html>
